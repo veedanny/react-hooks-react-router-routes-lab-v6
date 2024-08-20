@@ -17,11 +17,7 @@ const directors = [
     movies: ["Jack Reacher: Never Go Back", "Blood Diamond", "The Siege"],
   },
 ];
-
-const router = createMemoryRouter(routes, {
   initialEntries: [`/directors`],
-  initialIndex: 0
-})
 
 test("renders without any errors", () => {
   const errorSpy = jest.spyOn(global.console, "error");
